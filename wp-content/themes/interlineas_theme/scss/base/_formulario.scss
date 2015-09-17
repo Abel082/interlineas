@@ -1,0 +1,61 @@
+.form_sidebar{ 
+	width:300px;
+	padding: 25px;
+	float: right;
+
+	border: solid 1px $brand-color;
+	border-radius: 25px;
+	text-align:center;
+
+}
+
+.formulario{
+	li{ list-style:none;
+	}
+	
+
+}
+.cajas{
+
+		input, textarea{
+		border: solid 1px  $brand-color;
+		width: 75%;
+		margin-top: 15px;
+
+		}
+		textarea{
+		height: 75px;
+
+		}
+	}
+
+
+.form_page{ 
+	width:70%;
+	padding: 25px;
+	margin:auto;
+	 
+	border: solid 1px $brand-color;
+	border-radius: 25px;
+	text-align:center;
+
+}
+
+
+@media (max-width: 1024px) {
+
+	.form_sidebar{
+ 		width:70%;
+		float: none;
+		margin: auto;
+		margin-top: 40px;
+		 
+	}		 
+	.cajas{
+		input, textarea{
+			width: 100%;
+			}
+		}
+}
+
+ 

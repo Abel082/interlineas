@@ -1,0 +1,28 @@
+
+/* Contenido
+________________________________________________*/
+
+
+.main {
+	width: 100%;
+	height: 100%;
+	padding: 75px 150px;
+	
+	text-align: left;
+} 
+
+
+.main__home{
+	width: 100%;
+	height: 100%;
+	padding: 75px 20px;
+	
+	text-align: center;
+} 
+
+@media only screen and (max-width: 800px) {
+	.main {
+	padding: 75px 50px;
+	
+	} 
+}

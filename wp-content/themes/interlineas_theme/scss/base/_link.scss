@@ -1,0 +1,115 @@
+
+/* Enlaces
+________________________________________________*/
+
+a{
+	text-decoration: none;
+	color: $brand-color-secundary;
+}
+
+a:hover{
+		color: $color-text;
+	}
+
+/* Botones del Claim
+________________________________________________*/
+
+
+.btn{
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    margin: 20px 10px;
+
+    text-align: center;
+
+    background-color: $brand-color;
+
+
+    &:nth-child(even){
+    	background-color: $brand-color-secundary;
+    }
+
+    a{
+		color: white;
+		font-style: italic;
+		font-weight: 300;
+		text-decoration: none;
+    }
+}
+
+
+
+
+
+/* Boton Contacto
+________________________________________________*/
+
+
+.btn__contacto{
+	
+	border: solid 1px white;
+	color: white;
+	padding:10px;
+
+	 
+}
+
+.btn__contacto_menu{
+	
+	
+	a
+	{	
+		padding:5px;
+		color:  $brand-color;
+		font-weight: 300;
+		font-style: italic;
+	}
+}
+
+
+/* Botones Secciones
+________________________________________________*/
+ 
+
+.btn__seccion{
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    margin: 20px 10px;
+
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 500px) {
+	.btn__seccion{
+    width: 100px;
+	}
+}
+
+ 
+/* Botones Formulario
+________________________________________________*/
+
+
+
+.btn__contacto_form{
+	
+	
+	a
+	{
+		color:  $brand-color;
+		font-weight: 300;
+		font-style: italic;
+	}
+	input{
+		 border: solid 1px  $brand-color;
+		width: 100px;
+		background: none;
+	}
+}
+
+
+
+

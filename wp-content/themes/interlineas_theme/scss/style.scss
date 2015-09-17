@@ -1,0 +1,83 @@
+/*!
+Theme Name: Inter Lineas
+Theme URI: 
+Author: Abel
+Author URI: 
+Description: Este es el tema peresonalizado para Inter Lineas. 
+Version: 1.0
+License: 
+License URI: 
+Tags: 
+Text Domain: 
+
+*/
+
+
+
+/*	1. Settings
+________________________________________________________*/
+/* AQUI ESTAN LOS ARCHIVOS DE LA CARPETA SETTINGS */
+
+@import "settings/_normalize.scss";
+@import "settings/_variables.scss";
+@import "settings/_mixin.scss";
+
+
+/*	2. Iconos
+________________________________________________________*/
+/* AQUI ESTAN LOS ARCHIVOS DE LA CARPETA MODULOS */
+
+
+@import "fontello/css/_interlineas.scss";
+@import "fontello/css/_interlineas-codes.scss";
+@import "fontello/css/_interlineas-embedded.scss";
+@import "fontello/css/_interlineas-ie7-codes.scss";
+@import "fontello/css/_interlineas-ie7.scss";
+@import "fontello/css/_animation.scss";
+
+
+
+
+
+
+/*	3. Base
+________________________________________________________*/
+/* AQUI ESTAN LOS ARCHIVOS DE LA CARPETA BASE */
+
+@import "base/_typography.scss";
+@import "base/_link.scss";
+@import "base/_listas.scss";
+@import "base/_formulario.scss";
+
+
+
+
+/*  4. Layout
+________________________________________________________*/
+/* AQUI ESTAN LOS ARCHIVOS DE LA CARPETA LAYOUT */
+
+@import "layout/_main.scss";
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
+@import "layout/_grid.scss";
+
+
+
+/*	5. Modulos
+________________________________________________________*/
+/* AQUI ESTAN LOS ARCHIVOS DE LA CARPETA LAYOUT */
+
+
+@import "modulos/_menu.scss";
+@import "modulos/_hero.scss";
+@import "modulos/_logo.scss";
+@import "modulos/_destacado.scss";
+@import "modulos/_tres-col.scss"; 
+@import "modulos/_pie.scss"; 
+@import "modulos/_grid-front-page.scss"; 
+@import "modulos/_grid-page.scss"; 
+@import "modulos/_secciones.scss"; 
+@import "modulos/_blog.scss"; 
+
+
+

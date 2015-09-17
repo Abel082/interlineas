@@ -1,0 +1,141 @@
+
+
+/* Contenido secundario
+________________________________________________________*/
+
+section.borde{
+    border-top: 1px solid #ecf2f2; 
+}
+
+.descripcion{   
+    position:relative;
+
+    height: 200px;
+   
+    text-align: right;
+    
+    .thumb{
+      
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        //z-index: -1;
+        padding:30px;
+        background-size: cover;
+        background-position: 50%;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color:rgba(#f1feff, 1);
+            z-index: 0;
+        }
+
+        &:hover::before {
+
+            background-color:rgba(#000000, 0.3);
+    
+        }
+    }
+
+    h4,
+    p,
+    ul li{
+        position: relative;
+        z-index: 3;
+    }
+
+    h4{
+        a{
+            color: $brand-color;
+            text-transform: uppercase; 
+        }
+    }
+
+    p{
+        a{
+            color: $color-text;
+        }
+    }
+
+    
+    
+    &:nth-child(even){
+        text-align: left;
+        .thumb::before{
+            background-color: #ffffff;
+            }
+    }
+
+    &:nth-child(3){
+        float: right;
+        text-align: left;
+    } 
+    &:nth-child(4){
+        float: right;
+        text-align: right;
+    }    
+
+    &:nth-child(even),
+    &:nth-child(4) {
+        h4{
+            color: $brand-color-secundary;
+            a{
+                color: $brand-color-secundary;
+            }
+        } 
+    } 
+   
+   &:hover{
+        background-color:rgba(0, 0, 0, 0.0);
+
+        h4,
+        p,
+        ul li{
+            color: white;  
+            a{
+                color:white;
+            } 
+        }
+
+        &:nth-child(even),
+        &:nth-child(3), 
+        &:nth-child(4){
+            h4, 
+            p,
+            ul li{
+                color: white;
+                a{
+                    color: white;
+                }
+            } 
+        }
+        .thumb:hover::before {
+
+            background-color:rgba(#000000, 0.3);
+
+        } 
+    }
+}
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 1024px) {
+    .descripcion{
+        text-align: center;
+         
+        &:nth-child(even),
+        &:nth-child(3),
+        &:nth-child(4){
+            float: none;
+            text-align: center;
+        }  
+    }
+}

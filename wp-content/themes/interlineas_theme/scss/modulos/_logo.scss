@@ -1,0 +1,36 @@
+/* Logo
+____________________________________________________*/
+
+h2.logo {
+	display: inline-block;
+	
+	margin:15px 15px;
+	padding:0;
+	
+
+	a{
+		display: block;
+		width: 100px;
+		height: 19px;
+
+		background: url(images/logo.jpg);
+		text-indent:-9999px;
+	}
+
+}
+
+/* Media mobile
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
+@media only screen and (max-width: 1024px) {
+	h2.logo{
+		display: block;
+		margin: 0;
+		padding:15px;
+		width: 100%;
+		a{
+			margin: auto;
+
+		}
+	}
+
+}

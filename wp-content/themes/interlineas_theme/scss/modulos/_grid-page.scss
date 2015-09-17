@@ -1,0 +1,49 @@
+
+/* Contenido secundario
+________________________________________________________*/
+
+.info{
+
+    height: auto;
+    padding:30px 100px;
+    
+    text-align: left;
+ background-color: #ffffff;  
+    /*background-color: #f1feff;  */
+
+    h4{
+        color: $brand-color;
+        text-transform: uppercase; 
+    }
+
+    p{
+        color: $color-text;   
+    }
+
+    &:nth-child(even){
+        
+       
+        h4{
+            color: $brand-color-secundary;
+        }  
+    }   
+}
+
+.half ul li{
+    color: $color-text;
+
+    list-style: none;
+    padding: 5px 0;
+  
+ 
+
+&:before {
+  content: '\e808';  
+  font-family: interlineas;  
+  display: inline-block;
+  width: 25px;  
+  margin-left: -25px;  
+
+  color: $brand-color;
+}
+}

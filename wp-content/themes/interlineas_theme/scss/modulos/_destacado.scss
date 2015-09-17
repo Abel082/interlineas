@@ -1,0 +1,36 @@
+
+
+/* Modulo destacado
+________________________________________________*/
+
+
+section.destacado{
+	width: 100%;
+	padding: 50px 0;
+	
+	background-color: $brand-color;
+	text-align:center;
+	
+
+	h3{
+		margin: 0 ;
+		margin-bottom: 35px;
+				
+		color:white;
+		font-size: 60px;
+		font-weight: 300;
+		font-style: italic;
+	}
+	a{color: white;}
+
+}
+
+@media only screen and (max-width: 960px) {
+	section.destacado{
+
+		h3{
+			 padding: 0 20px;
+			font-size: 48px;
+		}
+	}
+}

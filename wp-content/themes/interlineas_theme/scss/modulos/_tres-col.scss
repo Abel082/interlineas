@@ -1,0 +1,55 @@
+
+.cualidades {
+	content: '\e806';
+	background: #f2f3f7;
+	height:300px;
+	margin:0;
+	padding:50px 100px;
+
+		li{	
+		 	width: 33%;
+			display: inline-block;
+			float: left;
+			text-align: center;
+		
+			h4, p{
+				padding:0 15px;
+			}
+		}
+}
+
+ 
+.icon-clock:before,
+.icon-star-empty:before,
+.icon-thumbs-up:before {
+	font-size: 70px;
+	color: $brand-color-secundary;
+
+  } 
+
+
+
+
+
+
+
+
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 980px) {
+	.cualidades{
+
+	height: auto;
+
+		li{
+		 width: 100%;
+
+		 float: none;
+
+		}
+	}
+
+}

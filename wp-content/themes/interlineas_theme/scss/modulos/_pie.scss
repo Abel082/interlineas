@@ -1,0 +1,17 @@
+ 
+.pie{
+	
+	height:220px;
+	padding:15px;
+
+	background: $brand-color-secundary;
+}
+	
+ @media only screen and (max-width: 700px) {
+	.pie{
+		height:500px;
+	}
+}
+
+
+ 

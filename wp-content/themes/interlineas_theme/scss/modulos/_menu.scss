@@ -1,0 +1,186 @@
+
+/* Menu Principal
+____________________________________________________*/
+
+nav#main_menu_principal { 
+	margin-right: 20px;
+	font-size:15px;
+	float: right;
+
+	ul{	margin:0;
+		padding:0;
+		li {
+			display: inline-block;
+			padding: 15px 5px;	
+			
+			text-align: right;
+			a{
+
+				padding:5px;}
+		}
+	}
+
+	li ul {
+		display:none;
+		position:absolute;
+		z-index: 5;
+	}
+			
+	li:hover > ul {
+				display:block;
+				top:33px;
+				 border-bottom: solid 1px $brand-color;
+				  border-right: solid 1px $brand-color;	
+		 li {
+				position:relative;
+				display:block;
+				padding:10px;
+
+				background:#ffffff;
+				border-left: solid 1px $brand-color;
+
+				text-align: left;
+				a{ border:none;
+				}
+				ul li{ width:300px;}
+
+			}		
+ 	}
+}
+
+.gris a{ color:$color-text;}
+
+.mayus{
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+[type="checkbox"], label {
+	  display: none;
+}
+
+nav#mobile{
+	display:none;
+}
+
+
+/* Menu secundario
+____________________________________________________*/
+
+.main_menu_secondary { 
+	width:100%;
+
+	 
+	position:absolute;
+	
+	 background-color: rgba(30, 30 ,30 ,0.7);
+	padding:0 20px;
+	font-size:14px;
+	border-bottom: solid 1px $brand-color;
+	 
+	 
+
+	ul{	margin:0;
+		padding:0;
+		li {
+			display:inline-block;
+			padding: 5px;	
+
+			 
+			text-align: left;
+			a{
+				color:	#ffffff;
+			}
+		}
+	}
+}
+
+/* Menu Footer
+____________________________________________________*/
+
+.footer_menu{
+	
+	ul{ width:100%;
+		padding:15px;
+		margin: 0;
+
+		font-size: 18px;
+		 
+		li{
+			width: 33.3%;
+			display: inline-block;
+			float: left;
+			padding:3px;
+			
+			border:none;
+			text-align: center;
+			color: white;
+			
+			ul li{
+
+				width: 100%;
+				font-size: 16px;
+			}
+			a{
+				color: white;
+			}
+		}
+	}
+}
+
+/* Media mobile
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+@media only screen and (max-width: 1024px) {
+	nav#main_menu_principal,
+	.main_menu_secondary{
+		display: none;
+	}
+
+	label {
+	 	display: block;
+	 	position: absolute;
+		right: 20px;
+	  	top: 10px;
+	  	color: $brand-color;
+	  	padding: 5px;
+	  	border: solid 1px $brand-color;
+	}
+
+	[type="checkbox"]:checked ~ nav#mobile {
+
+		display: block;
+	  	z-index: 9999;
+	  	position: absolute;
+	  	width: 100%;
+		top: 50px;
+		left: 0;
+	}
+
+	nav#mobile { 
+	 
+		float: none;
+		background: #ffffff;
+
+		ul{	
+			li {
+				display: block;
+				text-align: center; 
+				padding:5px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.footer_menu{
+		
+		ul{ 
+			li{
+				width: 100% !important;
+				float: none;	
+				}
+		}
+	}
+
+}

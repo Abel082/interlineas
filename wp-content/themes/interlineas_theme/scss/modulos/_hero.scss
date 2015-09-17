@@ -1,0 +1,64 @@
+
+
+
+/* Imagen de fondo
+________________________________________________*/
+
+
+
+section.hero {
+        position:relative;
+		
+        width: 100%;
+        height: 500px;
+        margin-top: 40px;
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        
+
+
+      }
+ 
+section.hero::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   
+    background-color: rgba(30, 30 ,30 ,0.5);
+    content: '';
+   
+
+
+
+/* Titulo y subtitulo
+________________________________________________*/
+
+    
+}
+
+div.claim {
+	@include centrado;
+    width: 65%;
+    text-align: center;
+    
+    color: #ffffff;
+
+
+
+    h1{
+    	font-size: 16px;
+        font-style: italic;
+        font-weight: 300;
+
+    }
+
+
+    h2{
+    	font-size: 40px;
+        font-weight: 100;
+        margin-bottom: 15px;
+    }
+
+} 
